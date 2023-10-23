@@ -17,8 +17,8 @@ function Home() {
     <div
       className={
         darkMode
-          ? "bg-VeryDarkBlue text-DesaturatedBlue py-8 h-full md:h-screen"
-          : "bg-White text-DarkGrayishBlue py-8  h-full md:h-screen "
+          ? "bg-VeryDarkBlue text-DesaturatedBlue py-8 h-full "
+          : "bg-White text-DarkGrayishBlue py-8  h-full  "
       }
     >
       <div>
