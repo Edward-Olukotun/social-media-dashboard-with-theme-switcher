@@ -17,8 +17,8 @@ function Home() {
     <div
       className={
         darkMode
-          ? "bg-VeryDarkBlue text-DesaturatedBlue py-8 h-full "
-          : "bg-White text-DarkGrayishBlue py-8  h-full  "
+          ? "bg-VeryDarkBlue text-DesaturatedBlue  h-full "
+          : "bg-White text-DarkGrayishBlue   h-full  "
       }
     >
       <div>
@@ -52,9 +52,17 @@ function Home() {
             )}
 
             {darkMode ? (
-              <FaToggleOn onClick={toggleDarkMode} size="24px" />
+              <FaToggleOn
+                onClick={toggleDarkMode}
+                size="24px"
+                className="hover:cursor-pointer"
+              />
             ) : (
-              <FaToggleOff onClick={toggleDarkMode} size="24px" />
+              <FaToggleOff
+                onClick={toggleDarkMode}
+                size="24px"
+                className="hover:cursor-pointer"
+              />
             )}
           </div>
         </section>
@@ -65,8 +73,8 @@ function Home() {
           <section
             className={
               darkMode
-                ? "text-center bg-DarkDesaturatedBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6  mx-auto rounded-md my-4 border-t-4  border-Facebook"
-                : "text-center bg-LightGrayishBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6 mx-auto rounded-md my-4 border-t-4  border-Facebook"
+                ? "text-center bg-DarkDesaturatedBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6  mx-auto rounded-md my-4 border-t-4  border-Facebook hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : "text-center bg-VeryPaleBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6 mx-auto rounded-md my-4 border-t-4  border-Facebook hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <div className="flex justify-center my-2">
@@ -94,8 +102,8 @@ function Home() {
           <section
             className={
               darkMode
-                ? "text-center bg-DarkDesaturatedBlue w-[80%] md:h-[200px] md:pt-6 md:mx-4 mx-auto rounded-md my-4 border-t-4  border-Twitter"
-                : "text-center bg-LightGrayishBlue w-[80%] md:h-[200px] md:pt-6 md:mx-4 mx-auto rounded-md my-4 border-t-4  border-Twitter"
+                ? "text-center bg-DarkDesaturatedBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6  mx-auto rounded-md my-4 border-t-4  border-Twitter hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : "text-center bg-VeryPaleBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6 mx-auto rounded-md my-4 border-t-4  border-Twitter hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <div className="flex justify-center my-2">
@@ -123,8 +131,8 @@ function Home() {
           <section
             className={
               darkMode
-                ? "text-center bg-DarkDesaturatedBlue w-[80%] md:h-[200px] md:pt-6 md:mx-4 mx-auto rounded-md my-4 border-t-4  border-Instagram"
-                : "text-center bg-LightGrayishBlue w-[80%] md:h-[200px] md:pt-6 md:mx-4 mx-auto rounded-md my-4 border-t-4  border-Instagram"
+                ? "text-center bg-DarkDesaturatedBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6  mx-auto rounded-md my-4 border-t-4  border-Instagram hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : "text-center bg-VeryPaleBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6 mx-auto rounded-md my-4 border-t-4  border-Instagram hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <div className="flex justify-center my-2">
@@ -156,8 +164,8 @@ function Home() {
           <section
             className={
               darkMode
-                ? "text-center bg-DarkDesaturatedBlue w-[80%]  md:h-[200px] md:pt-6 md:mx-4 mx-auto rounded-md my-4 border-t-4  border-YouTube"
-                : "text-center bg-LightGrayishBlue w-[80%] md:h-[200px] md:pt-6 md:mx-4 mx-auto rounded-md my-4 border-t-4  border-YouTube"
+                ? "text-center bg-DarkDesaturatedBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6  mx-auto rounded-md my-4 border-t-4  border-YouTube hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : "text-center bg-VeryPaleBlue w-[80%] md:mx-4 md:h-[200px] md:pt-6 mx-auto rounded-md my-4 border-t-4  border-YouTube hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <div className="flex justify-center my-2">
@@ -198,8 +206,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
@@ -226,8 +234,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
@@ -254,8 +262,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
@@ -282,8 +290,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
@@ -310,8 +318,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
@@ -338,8 +346,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
@@ -366,8 +374,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
@@ -394,8 +402,8 @@ function Home() {
           <div
             className={
               darkMode
-                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
-                : " bg-LightGrayishBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3"
+                ? " bg-DarkDesaturatedBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-DesaturatedBlue/5"
+                : " bg-VeryPaleBlue w-[90%]  md:pt-6 md:mx-4 mx-auto rounded-md my-3 hover:cursor-pointer hover:bg-LightGrayishBlue"
             }
           >
             <section className="flex justify-between mx-4 pt-3">
